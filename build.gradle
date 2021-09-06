@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        springBootVersion = '2.5.4'
+        javaVersion = '11'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group 'me.kmj'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

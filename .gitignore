@@ -1,0 +1,16 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/intellij,java,gradle
+# Edit at https://www.toptal.com/developers/gitignore?templates=intellij,java,gradle
+
+### Intellij ###
+.idea
+
+### Gradle ###
+.gradle
+build/
+!gradle-wrapper.jar
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.toptal.com/developers/gitignore/api/intellij,java,gradle
